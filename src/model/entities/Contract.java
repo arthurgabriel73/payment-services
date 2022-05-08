@@ -5,9 +5,9 @@ import java.util.List;
 
 public class Contract {
 
-    private Integer contractNumber;
-    private Date contractDate;
-    private Double totalValue;
+    private final Integer contractNumber;
+    private final Date contractDate;
+    private final Double totalValue;
 
     public Contract(Integer contractNumber, Date contractDate, Double totalValue) {
         this.contractNumber = contractNumber;
@@ -17,5 +17,9 @@ public class Contract {
 
     public Double getTotalValue() {
         return totalValue;
+    }
+
+    public Date getContractDate() {
+        return contractDate;
     }
 }
